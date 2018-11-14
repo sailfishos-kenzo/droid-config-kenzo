@@ -14,6 +14,7 @@ Requires:
 - droid-config-kenzo-flashing
 - droid-config-kenzo-bluez5
 - droid-hal-version-kenzo
+- droid-hal-kenzo-detritus
 
 # Hybris packages
 - libhybris-libEGL
