@@ -1,0 +1,11 @@
+[Unit]
+Description=Delay Ofono service
+After=droid-hal-init.service
+Before=ofono.service
+
+[Service]
+Type=oneshot
+ExecStart=/bin/sleep 5
+
+[Install]
+RequiredBy=multi-user.target
