@@ -1,0 +1,12 @@
+[Unit]
+Description=FM Radio Permissions
+DefaultDependencies=false
+After=droid-fm-up.service
+
+[Service]
+Type=oneshot
+ExecStart=/system/bin/chmod a+w /sys/module/radio_iris_transport/parameters/fmsmd_set
+RemainAfterExit=yes
+
+[Install]
+WantedBy=bluetooth.service
