@@ -5,7 +5,7 @@ Before=ofono.service
 
 [Service]
 Type=oneshot
-ExecStart=/bin/sleep 5
+ExecStart=/bin/sleep 7
 
 [Install]
 RequiredBy=multi-user.target
